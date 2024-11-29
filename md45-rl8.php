@@ -10,7 +10,7 @@ $md = 'moodle'; // 同一サーバ上で2つ目のMoodleをセットアップす
 
 // Moodle 動作に必要な packages をインストール
 system("dnf -y install php-opcache php-gd php-curl php-mysqlnd php-soap php-xml php-mbstring php-intl php-pecl-zip php-sodium php-ldap php-pspell ");
-system("dnf -y install mod_ssl git");
+system("dnf -y install mod_ssl mariadb-server git ");
 system("dnf -y install graphviz aspell ghostscript clamav ");
 
 // Moodle4.5 は MariaDB 10.6 以上を要求
