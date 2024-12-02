@@ -14,9 +14,9 @@ system("apt -y install git graphviz aspell ghostscript clamav php8.3-pspell php8
 
 // PHP設定 max_input_vars を 5000 に
 system("cp /etc/php/8.3/apache2/php.ini /etc/php/8.3/apache2/php.ini.orig");
-system("sed -i '/max_input_vars = .*/a\max_input_vars = 5000' /etc/php/8.1/apache2/php.ini");
+system("sed -i '/max_input_vars = .*/a\max_input_vars = 5000' /etc/php/8.3/apache2/php.ini");
 system("cp /etc/php/8.3/cli/php.ini /etc/php/8.3/cli/php.ini.orig");
-system("sed -i '/max_input_vars = .*/a\max_input_vars = 5000' /etc/php/8.1/cli/php.ini");
+system("sed -i '/max_input_vars = .*/a\max_input_vars = 5000' /etc/php/8.3/cli/php.ini");
 
 system("systemctl restart apache2.service");
 
