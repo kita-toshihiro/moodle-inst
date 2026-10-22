@@ -1,7 +1,7 @@
 <?php
 // サーバによって違う parameters (各自編集してください):
 $host = "xxx.xxx.xxx.xxx";  // set host IP address or DNS hostname
-$ver = "503"; // Moodle 5.3 (MOODLE_503_STABLE)
+$ver = "405"; // Moodle 4.5 (MOODLE_405_STABLE)
 $mdpass = 'Your%Pass-Word'; // moodle admin, mysql user ('&' は避ける)
 $adminemail = "youradminmail@foo.bar";
 
