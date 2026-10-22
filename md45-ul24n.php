@@ -113,7 +113,7 @@ system("ufw allow 'Nginx Full'");
 echo "\n=======================================================\n";
 echo "セットアップが完了しました。\n";
 echo "URL: {$url}\n";
-echo "Adminパスワード: {$mdpass}\n\n";
+echo "adminパスワード: {$mdpass}\n\n";
 echo "定期実行タスク (Cron) を登録するため、以下を crontab に追加してください:\n";
 echo "* * * * * sudo -u www-data /usr/bin/php {$mdroot}/admin/cli/cron.php > /dev/null 2>&1\n";
 echo "=======================================================\n";
